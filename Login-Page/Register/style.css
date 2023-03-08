@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/FiraSans-Regular.ttf");
+}
+
+html,
+body {
+  font-family: "Fira Sans";
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  background-color: rgb(20, 20, 20);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container:first-of-type {
+  margin-top: 25vh;
+}
+
+.form-container:last-of-type {
+  margin-bottom: 25vh;
+}
+
+.forms {
+  color: antiquewhite;
+  font-size: 20px;
+  width: 40%;
+  height: 5vh;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: rgb(20, 20, 20);
+}
+
+.forms:focus {
+  outline: none;
+}
+
+.forms::placeholder {
+  font-size: 15px;
+}
+
+.register {
+  color: antiquewhite;
+  border: none;
+  width: 20%;
+  height: 5vh;
+  font-size: 17px;
+  font-family: "Fira Sans";
+  background-color: rgb(0, 80, 150);
+}
+
+.register:hover {
+  background-color: rgb(0, 60, 130);
+}
+
+.register:active {
+  background-color: rgb(0, 50, 120);
+}
+
+.text {
+  color: antiquewhite;
+  font-size: 30px;
+}
