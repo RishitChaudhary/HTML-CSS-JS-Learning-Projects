@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+
+/* I'll grow old tryna fix this site's bugs dafuq, so I won't. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #404eed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+header {
+  top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Righteous", cursive;
+  letter-spacing: 1.5px;
+  background-color: rgba(64, 78, 237, 1);
+  color: #fff;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin: 0 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.links::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 21px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.links:hover::before {
+  transform: scaleX(1);
+}
+
+header .sign-up-button {
+  font-family: "Righteous", cursive;
+  background-color: #00c000;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header .sign-up-button:hover {
+  background-color: #00aa00;
+  transition: 0.5s ease;
+}
+
+main {
+  background-color: #404eed;
+  /* background-image: url("assets/main-bg.jpeg"); */
+  background-size: cover;
+  height: 80vh;
+  display: grid;
+}
+
+main .container-s {
+  text-align: center;
+  margin-top: 20vh;
+  height: max-content;
+  width: 100%;
+  justify-self: center;
+  z-index: 2;
+}
+
+main .container-s .slogan {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+  margin: 0 auto 0 auto;
+  font-family: "Secular One", sans-serif;
+}
+
+main .container-p {
+  margin-top: -13.5vh;
+  height: max-content;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+main .container-p .text {
+  color: #fff;
+  font-size: large;
+  font-family: "Secular One", sans-serif;
+}
+
+.buttons {
+  margin-top: -18vh;
+  height: max-content;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.button {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  background-color: #00c000;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  width: 160px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #00aa00;
+  transition: 0.5s ease;
+}
+
+footer {
+  height: max-content;
+  background-color: rgb(31, 31, 31);
+}
+
+.container-a {
+  display: flex;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  font-family: "Righteous", cursive;
+  /* font-family: "Hanken Grotesk", sans-serif; */
+  justify-content: space-between;
+}
+
+.container-a a:first-of-type {
+  margin-left: 20px;
+}
+
+.container-a a:last-of-type {
+  margin-right: 20px;
+}
+
+.container-a a {
+  text-decoration: none;
+  color: antiquewhite;
+  position: relative;
+}
+
+.container-a a:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 22px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.container-a a:hover::before {
+  transform: scaleX(1);
+}
+
+.copyright {
+  font-size: small;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: antiquewhite;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+.background {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: inherit;
+  z-index: 1;
+}
+
+.asset1 {
+  height: 40vh;
+  align-self: flex-end;
+  margin-left: -11vw;
+  z-index: 1;
+}
+
+.asset2 {
+  position: absolute;
+  height: 40vh;
+  align-self: flex-end;
+  margin-left: 70vw;
+  z-index: 1;
+}
+
+.asset3 {
+  position: absolute;
+  height: 40vh;
+  align-self: flex-end;
+  z-index: 0;
+  /* width: 100%; */
+  height: 50vh;
+}
