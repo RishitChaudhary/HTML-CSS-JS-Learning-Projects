@@ -1,0 +1,61 @@
+/* Elements CSS */
+p {
+  color: rgb(140, 140, 140);
+  font-size: small;
+}
+b {
+  font-family: "Alegreya Sans SC";
+  font-size: 20px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  color: antiquewhite;
+}
+
+/* Default styles for buttons */
+button {
+  /* Other */
+  background-color: rgb(40, 40, 40);
+  transition: background-color 0.3s linear;
+  width: 80%;
+  height: 50px;
+  border-radius: 0px;
+}
+
+/* Hover effects for buttons */
+button:hover {
+  cursor: pointer;
+  background-color: rgb(30, 30, 30);
+}
+
+/* Class CSS */
+
+/* Style for first button */
+.first-button {
+  /* Border */
+  border-top: 2px solid antiquewhite;
+  border-bottom: 2px solid antiquewhite;
+  border-right: 2px solid antiquewhite;
+  border-left: 2px solid antiquewhite;
+
+  /* Radius */
+  border-radius: 8px;
+}
+
+/* Style for last button */
+.last-button {
+  margin-top: 1%;
+  /* Border */
+  border-top: 2px solid antiquewhite;
+  border-bottom: 2px solid antiquewhite;
+  border-right: 2px solid antiquewhite;
+  border-left: 2px solid antiquewhite;
+
+  /* Radius */
+  border-radius: 8px;
+}
